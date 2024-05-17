@@ -32,15 +32,14 @@ async def get_order(
     return service.get_by_id(order_id)
 
 
-@router.post("/novo", response_model=Order.id)
+@router.post("/novo", response_model=Order)
 @inject
 async def create_order(
     order: UpsertOrder,
     service: OrderService = Depends(Provide[Container.order_service]),
     current_user: User = Depends(get_current_active_user),
-):  
-    print(order)
-    return order[0].id
+):
+    return service.add(order)
 
 
 @router.patch("/{order_id}", response_model=Order)
