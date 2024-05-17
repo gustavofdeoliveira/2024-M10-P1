@@ -41,3 +41,20 @@ O projeto estará disponível em `http://localhost:8000/docs`, onde você poder�
 9. E posteriormente deletar um pedido na rota DELETE `pedidos/{id}` ou atualizá-lo na rota PATCH `pedidos/{id}`
 
 
+### Novo pedido
+
+![1715954437564](image/README/1715954437564.png)
+
+### Visualizar pedido
+
+![1715954613124](image/README/1715954613124.png)
+
+## Vizualizar todos os pedidos
+
+![1715954578243](image/README/1715954578243.png)
+
+### Atualizar pedido
+
+![1715954505684](image/README/1715954505684.png)
+
+![1715954529573](image/README/1715954529573.png)
